@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Secular+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* ---------------------- Navbar Component styling ---------------------- */
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.heading .vertical-text{
+    font-size: 28px;
+    writing-mode: vertical-rl;
+    transform:scale(-1);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+}
+.heading .capital-text{
+    font-family: 'Secular One', sans-serif;
+    font-size: 60px;
+}
+
+.nav-links {
+  display: flex;
+  margin: 0 10%;
+  height: 25px;
+   font-family: 'Roboto', sans-serif;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ .links {
+  text-decoration: none;
+  color: black;
+  position: relative;
+  padding: 2px 12px;
+  
+}
+
+ .links::after {
+ position: absolute;
+  content: '';
+  width: 90%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background: #ec0547;
+  transform: scale(0, 1);
+  transform-origin: 50% 100%;
+  transition: transform 0.3s ease;
+}
+ .links:hover::after {
+  transform: scale(1, 1);
+}
+
+.horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 15px 10%;
+  height: 2px;
+}
+
+
+/* ---------------------- Home Component styling ---------------------- */
+.home-container {
+  margin: 25px auto;
+}
+
+ .image-container {
+    display: flex;
+ margin:  auto 10%;
+  
+}
+
+ .image-1 {
+  text-align: left;
+}
+
+ .image-image-1 {
+  width: 690px;
+  height:100% ;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 20px;
+}
+
+ .image-text1 {
+ position: absolute;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  color: white;
+  bottom: 0;
+  left: 0;
+  transform: translate(45%, 50%);
+}
+
+ .image-text2 {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(72%, 180%);
+}
+
+ .image-2 {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+ .image-image-2 {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+/* ---------------------- The Latest Component styling ---------------------- */
+.latest-container {
+  margin: 3% 10%;
+}
+
+ .latest-heading {
+  text-align: left;
+  font-size: 30px;
+  position: relative;
+  margin: 10px 0 25px 0;
+  font-family: 'Roboto' , sans-serif;
+}
+
+ .latest-heading:after {
+  
+  display: block;
+  width: 7.5%;
+  content: '';
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background: #ec0648;
+}
+ .latest-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+ .latest-card {
+  width: 33%;
+  height: 450px;
+  display: flex;
+}
+
+.latest-card img {
+  width: 97%;
+  height: 200px;
+  object-fit: cover;
+}
+
+ .latest-title {
+  color: black;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  text-align: left;
+  margin: 15px;
+}
+
+ .latest-desc{
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: left;
+  color: darkgray;
+  margin: 20px;
+}
+
+ .latest-date {
+  color: darkgray;
+  text-align: left;
+  margin: 15px;
+}
+
+ .latest-category {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+
+/* ---------------------- Latest Stories Component styling ---------------------- */
+ .latest-Stories-horizontal-line {
+  background-color: #777272;
+  border: none;
+  margin: 3% auto;
+  height: 2px;
+}
+
+/* ---------------------- Latest Articles Component styling ---------------------- */
+.latest-article-container {
+  margin: 1% 10% 3% ;
+  height: 100%;
+}
+
+ .latest-articles-heading {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Ubuntu' , sans-serif;
+  margin: 4% 0 1% 0;
+  position: relative;
+}
+
+ .latest-articles-heading:after {
+  content: '';
+  display: block;
+  background: #ee0648;
+  width: 8%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+ 
+}
+
+ .articles-division {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+ .article-bar {
+  width: 100%;
+  padding: 0 10px 10px 0;
+}
+
+ .latest-articles {
+  margin: 2% 2%;
+  display: flex;
+}
+
+ .latest-articles-image {
+  width: 40%;
+  height: 12%;
+  object-fit: cover;
+
+ }
+.latest-article-details {
+  margin-left: 15px;
+  color: rgb(136, 128, 128);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+ .latest-article-heading {
+  font-size: 25px;
+  color: black;
+}
+ .latest-article-body {
+  font-size: 13px;
+  color: darkgray;
+}
+ .latest-article-category {
+  color: black;
+}
+
+ .article-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 3% auto;
+  height: 2px;
+}
+
+
+/* --------------------- Top post Component styling ---------------------  */
+ .top-post {
+  width: 55%;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  height: 1132px;
+}
+
+ .advertisement {
+  border: 1px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 3%;
+  height: 10%;
+  font-size: 28px;
+}
+
+ .top-post-heading {
+  font-size: 30px;
+  margin: 3% 3% 7% 3%;
+  position: relative;
+}
+
+ .top-post-heading:after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+ .top-post-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 5% 3%;
+  height: 2px;
+}
+
+ .top-post-container {
+  color: black;
+  margin: 3%;
+  display: flex;
+  align-items: center;
+}
+
+ .top-post-image {
+  width: 40%;
+  height: 100px;
+  object-fit: cover;
+}
+
+ .top-post-content {
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .top-post-title {
+  font-size: 15px;
+}
+ .top-post-content p {
+  color: darkgray;
+}
+.top-post-category {
+  color: black;
+}
+
+/* ------------------------- Category Component Styling ------------------------- */
+
+.category-container {
+  margin: 0 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+ .category-heading {
+  text-align: left;
+  margin: 5% 4%;
+  font-size: 30px;
+  font-family: 'Ubuntu' , sans-serif;
+  position: relative;
+}
+
+ .category-heading:after {
+  content: '';
+  display: block;
+  width: 10%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background: #ea0e4b;
+}
+
+ .category-main {
+  width: 66%;
+}
+ .content-container{
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+
+ .category-main-images {
+  width: 42%;
+  height: 12%;
+  object-fit: cover;
+}
+
+ .content-division {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+ .content-main-title {
+  font-size: 24px;
+}
+
+ .content-main-body {
+  font-size: 13px;
+  color: darkgray;
+}
+
+ .content-main-date {
+  color: darkgray;
+}
+ .content-main-category {
+  font-size: 17px;
+}
+
+ .category-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 4% 3%;
+  height: 2px;
+}
+
+ .category-top-post {
+  width: 33%;
+}
+
+ .content-top-post-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+}
+ .content-top-post-images {
+  width: 50%;
+  height: 10%;
+  object-fit: cover;
+}
+ .content-top-post-division {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: space-between;
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.content-top-post-category {
+  font-size: 14px;
+}
+
+.content-top-post-date {
+  color: darkgray;
+}
+
+ .category-horizontal-line{
+  background-color: #D5D5D5;
+  border: none;
+  margin: 4% 6%;
+  height: 2px;
+}
+
+ .advertisement {
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #707070;
+  margin: 5% 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  font-size: 24px;
+}
+
+
+/* ------------------------- Article Component Styling ------------------------- */
+.article-container {
+  margin: 3% 30%;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+}
+
+ .article-title {
+  font-size: 25px;
+  margin: 3% auto;
+}
+
+ .article-image {
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+}
+
+ .article-description {
+  margin: 4% auto;
+}
+
+ .article-category-clap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ .article-category {
+  padding: 10px;
+  background-color: #f3f0f0;
+  color: #adabab;
+  border-radius: 5px;
+}
+
+ .article-clap {
+  display: flex;
+  align-items: center;
+}
+
+ .article-clap-image {
+  height: 33px;
+  margin: 10px;
+}
+
+ .article-horizontal-line {
+  background-color: #D5D5D5;
+  border: none;
+  margin: 3% auto;
+  height: 2px;
+}
+
+ .article-user {
+  display: flex;
+  align-items: center;
+}
+
+ .artice-user-image {
+  height: 100px;
+}
+
+ .article-user-division {
+  margin: auto 3%;
+}
+
+.article-user-written {
+  text-transform: uppercase;
+  color: #A2A2A2;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+ .article-user-date {
+  color: #A2A2A2;
+  font-size: 14px;
+  margin-top: 10px;
+
+}
+
+
+/* ------------------------- Display Component Styling ------------------------- */
+.display-container {
+
+  font-family: 'Poppins', sans-serif;
+  cursor: default;
+  text-align: left;
+  padding: 2.5% 5%;
+}
+
+ .display-heading {
+  font-size: 30px;
+}
+
+ .display-horizontal-line {
+  background-color: #c2bcbc;
+  border: none;
+  margin: 2% auto;
+  height: 2px;
+}
+
+.display-items {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+ .display-box {
+  width: 30%;
+}
+
+.display-info {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #A2A2A2;
+}
+
+ .display-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+ .display-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  margin: 20px 0;
+}
+
+ .display-user-box {
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+}
+
+.display-user {
+  height: 70px;
+}
+ .display-user-details {
+  margin: auto 3%;
+}
+
+ .display-date {
+  color: #979090;
+  margin: 2% auto;
+}
