@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useContext, useState } from "react";
 import { MainContext } from "./MainContext";
 import { ReactComponent as Hamburger } from "../icons/menu.svg";

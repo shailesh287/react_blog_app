@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import TheLatest from "./TheLatest";
 import LatestStories from "./LatestStories";
 import LatestArticles from "./LatestArticles";
-import Category from "./Category";
 
 const Home = () => {
   const [data] = useContext(MainContext);
